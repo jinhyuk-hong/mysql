@@ -30,11 +30,11 @@ public class BoardInsertExample {
 			//PreparedStatement 얻기 및 값 지정
 			PreparedStatement pstmt = conn.prepareStatement(
 					sql, Statement.RETURN_GENERATED_KEYS);
-			pstmt.setString(1, "눈오는 날");
-			pstmt.setString(2, "함박눈이 내려요.");
-			pstmt.setString(3, "winter");
-			pstmt.setString(4, "snow.jpg");
-			pstmt.setBlob(5, new FileInputStream("src/project/snow.jpg"));
+			pstmt.setString(1, "크리스마스");
+			pstmt.setString(2, "메리크리스마스~.");
+			pstmt.setString(3, "chrismas");
+			pstmt.setString(4, "chrismas.jpg");
+			pstmt.setBlob(5, new FileInputStream("src/project/chrismas.jpg"));
 			
 			//SQL문 실행
 			int rows = pstmt.executeUpdate();
