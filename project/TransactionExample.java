@@ -36,7 +36,7 @@ public class TransactionExample {
 				String sql2 = "UPDATE accounts SET balance=balance+? WHERE ano=?";
 				PreparedStatement pstmt2 = conn.prepareStatement(sql2);
 				pstmt2.setInt(1,  10000);
-				pstmt2.setString(2, "333-222-2222");
+				pstmt2.setString(2, "222-222-2222");
 				int rows2 = pstmt2.executeUpdate();
 				if(rows2 == 0) throw new Exception("입금되지 않았음");
 				pstmt2.close();
